@@ -5,6 +5,7 @@
 npm i       （安装项目依赖包）
 npm i -g n  （安装node包版本管理工具）
 n v16.17.0  （安装v16.17.0版本的node）
+node app    （启动node服务）
 ```
 ## Project setup
 ```
