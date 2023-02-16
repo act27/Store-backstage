@@ -34,6 +34,16 @@
               </el-menu-item-group>
             </el-sub-menu>
 
+            <el-sub-menu index="3">
+              <template #title>
+                <el-icon><Avatar /></el-icon>
+                <span>商品管理</span>
+              </template>
+              <el-menu-item-group>
+                <el-menu-item index="goods">商品列表</el-menu-item>
+              </el-menu-item-group>
+            </el-sub-menu>
+
           </el-menu>
         </el-aside>
 
