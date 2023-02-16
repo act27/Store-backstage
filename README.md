@@ -1,5 +1,11 @@
 # shop
-
+##node 服务在serve文件夹内
+###node 服务完整启动命令：
+```
+npm i       （安装项目依赖包）
+npm i -g n  （安装node包版本管理工具）
+n v16.17.0  （安装v16.17.0版本的node）
+```
 ## Project setup
 ```
 npm install
