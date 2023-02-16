@@ -1,0 +1,20 @@
+{
+	"config_name" : "develop",
+	"jwt_config" : {
+		"secretKey":"itcast",
+		"expiresIn":86400
+	},
+	"upload_config":{
+		"baseURL":"http://127.0.0.1:8888",
+		"upload_ueditor":"uploads/ueditor",
+		"simple_upload_redirect":"http://127.0.0.1/reload"
+	},
+	"db_config" : {
+		"protocol" : "mysql",
+		"host" : "192.168.3.128",
+		"database" : "mydb",
+		"user" : "root",
+		"password" : "2333",
+		"port" : 3306
+	}
+}
