@@ -22,7 +22,9 @@ Service.interceptors.request.use(config=>{
 })
 // 响应拦截 对返回值做统一处理 
 Service.interceptors.response.use(response=>{
-    loadingObj.close()
+    setTimeout(() => {
+        loadingObj.close()
+    }, 1000);
     const data = response.data
     if(data.meta.status > 201){
         // 请求出错

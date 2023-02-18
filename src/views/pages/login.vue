@@ -55,7 +55,7 @@ export default {
 
         const handleLogin = () => {
             // 请求后台接口
-            // 默认用户admin
+            // 默认用户admin,123456
             loginApi(data.loginData).then(res => {
                 if (res.data) {
                     store.commit('setUserInfo', res.data);
