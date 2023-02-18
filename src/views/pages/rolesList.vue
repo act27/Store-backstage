@@ -114,8 +114,8 @@ export default {
         // 获取角色列表
         const getList = () => {
             getRolesApi().then(res => {
-                console.log(res);
                 data.rolesList = res.data
+                console.log(res);
             })
         }
         // 编辑角色
