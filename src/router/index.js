@@ -49,7 +49,6 @@ router.beforeEach((to,from,next)=>{
 
   // 判断用户是否登录
   // console.log("store",store.state.uInfo)
-
   const uInfo = store.state.uInfo.userInfo
   if(!uInfo.username){
     // 未登录,跳转到login

@@ -11,6 +11,13 @@ const Service = axios.create({
         "Authorization":store.state.uInfo.userInfo.token
     }
 })
+
+// axios.interceptors.request.use(config => {
+//     console.log("axios",config);
+//     config.headers.Authorization = window.sessionStorage.getItem('token');
+//     // 在最后必须return 
+//     return config
+// })
 // 请求拦截-增加loading,对请求做统一处理
 Service.interceptors.request.use(config=>{
     loadingObj=ElLoading.service({
@@ -24,7 +31,7 @@ Service.interceptors.request.use(config=>{
 Service.interceptors.response.use(response=>{
     setTimeout(() => {
         loadingObj.close()
-    }, 1000);
+    }, 200);
     const data = response.data
     if(data.meta.status > 201){
         // 请求出错

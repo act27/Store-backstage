@@ -61,10 +61,9 @@ export default {
             total: 1,
             goodsList: [],
         })
-
         const searchList = () => {
             goodsListApi(data.searchParams).then(res => {
-                console.log(res);
+                console.log(res.meta);
                 if (res.data) {
                     data.goodsList = res.data.goods
                     data.total = res.data.total
